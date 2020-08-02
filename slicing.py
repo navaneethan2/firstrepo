@@ -10,7 +10,16 @@ def solution(x):
      else:
           return int(txt[::-1])
 
-print(solution(123))
-print(solution(-1234))
+#print(solution(123))
+#print(solution(-1234))
 
 
+#Return a Given integer
+
+n = int(input("Enter the No: "))
+rev = 0
+while (n > 0 ):
+     rem = n % 10
+     rev = rev * 10  + rem
+     n = n / 10
+print("The reverse of the given integer is :", rev)
